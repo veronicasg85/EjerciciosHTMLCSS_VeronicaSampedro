@@ -4,17 +4,49 @@
   <meta charset="UTF-8">
   <title>Ejercicio texto 5</title>
   <style>
-
+    
     body {
       margin: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: lightgray;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      background-color: gray;
+      color: white;
+      font-size: 2rem;
+      padding: 5px;
+      margin-top: 0;
     }
 
     figure {
-      margin: 0;
+      margin: 0 20px 20px 0; 
+      float: left; 
     }
 
     figcaption {
       font-size: 0.9em;
+      color: beige;
+      text-align: center;
+    }
+
+    .html, .css {
+      overflow: auto; 
+      margin-bottom: 40px;
+    }
+
+    p {
+      line-height: 1.5;
+      margin-top: 0;
+    }
+
+    .red {
+      color: red;
     }
 
   </style>
@@ -23,25 +55,25 @@
 
   <h2>HTML 5 y CSS 3</h2>
 
-  <section>
+  <section class="html">
     <h3>HTML 5</h3>
     <figure>
       <img src="./img/html5-logo.svg" alt="Logo HTML5" width="100">
       <figcaption>Logo de HTML5</figcaption>
     </figure>
     <p>
-      El <em>28 de octubre de 2014</em> se aprobó la <strong>Recomendación <abbr title="HyperText Markup Language">HTML</abbr> 5</strong>,
+      El <em class="red">28 de octubre de 2014</em> se aprobó la <strong>Recomendación <abbr title="HyperText Markup Language">HTML</abbr> 5</strong>,
       culminando así diez años de trabajo. En 2004 se formó el <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr>, un grupo informal de individuos y empresas dedicados a impulsar el desarrollo del HTML,
       que se encontraba bloqueado en el <abbr title="World Wide Web Consortium">W3C</abbr> desde el año 2000.<br>
       En 2007 el W3C retomó el trabajo sobre el HTML y siete años después se alcanzó el objetivo.
     </p>
     <p>
-      Pero el HTML 5.0 era más que el primer paso. El 1 de noviembre de 2016 se aprobó la recomendación HTML 5.1,
+      Pero el HTML 5.0 era más que el primer paso. El <em class="red">1 de noviembre de 2016</em> se aprobó la recomendación HTML 5.1,
       ampliando y clarificando el HTML 5, y el W3C ya está trabajando en el HTML 5.2, previsto para finales de 2017.
     </p>
   </section>
 
-  <section>
+  <section class="css">
     <h3>CSS 3</h3>
     <figure>
       <img src="./img/css3-logo.svg" alt="Logo CSS3" width="100">

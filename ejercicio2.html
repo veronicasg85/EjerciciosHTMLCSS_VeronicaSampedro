@@ -3,6 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio texto 2</title>
+    <style>
+
+        strong {
+            color:slateblue;
+            font-size: 2rem;
+        }
+
+        .linea {
+            display: inline-block;
+            position: relative;
+            
+        }
+
+        .linea::before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+
+        .linea strong {
+            position: relative;
+            z-index: 1; 
+            padding: 0 2px;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -10,11 +39,13 @@
 Este es un
 ejemplo     de      texto
 preformateado.
-La marca pre     preserva     espacios     en     blanco
+La marca <strong>pre</strong>    preserva     espacios     en     blanco
 y saltos de línea
 </pre>
 
+<div class="linea">
 <p>La marca <strong>pre</strong> también es buena para mostrar código de programación:</p>
+</div>
 
 <pre>
 for i = 1 to 10
@@ -22,11 +53,15 @@ for i = 1 to 10
 next i
 </pre>
 
+<div class="linea">
 <p>También se puede utilizar la marca <strong>code</strong></p>
+</div>
 
 <p><code>for i = 1 to 10 print i next i</code></p>
 
+<div class="linea">
 <p>pero <strong>code</strong> no respeta espaciado ni saltos de línea</p>
+</div>
 
 </body>
 </html>
